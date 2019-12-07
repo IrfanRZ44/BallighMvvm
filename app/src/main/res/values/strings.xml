@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BallighMvvm</string>
+
+    <string name="text_maintenance">Mohon Maaf, aplikasi sedang maintenance</string>
+
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_in">Sign In</string>
+
+    <string name="text_all_right_reserved">Balligh | All Right Reserved 2019</string>
+</resources>
