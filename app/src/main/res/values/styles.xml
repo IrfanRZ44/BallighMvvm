@@ -11,8 +11,8 @@
     <style name="CustomMB" parent="Theme.AppCompat.Light.NoActionBar" >
         <item name="colorPrimary">@color/colorPrimaryMB</item>
         <item name="colorAccent">@color/colorPrimaryMB</item>
-        <item name="android:colorForeground">@color/colorPrimaryMB</item>
-        <item name="android:windowBackground">@color/colorPrimaryMB</item>
+<!--        <item name="android:colorForeground">@color/whi</item>-->
+<!--        <item name="android:windowBackground">@color/colorPrimaryMB</item>-->
         <item name="android:colorBackground">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/colorPrimaryMB</item>
     </style>

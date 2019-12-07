@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.exomatik.balligh"
+        applicationId "com.exomatik.balligh.balligh"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -36,6 +36,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
 
-    //image
-
+    //firebase
+    implementation 'com.google.firebase:firebase-database:19.2.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

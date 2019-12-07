@@ -1,7 +1,8 @@
-package com.exomatik.balligh.base
+package com.exomatik.balligh.balligh.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.exomatik.balligh.balligh.utils.FirebaseUtils
 
 abstract class BaseActivity : AppCompatActivity(){
     protected abstract fun onClick()
@@ -22,5 +23,8 @@ abstract class BaseActivity : AppCompatActivity(){
     private fun init(){
     }
 
-
+    override fun onDestroy() {
+        super.onDestroy()
+        FirebaseUtils.cancelQuery()
+    }
 }

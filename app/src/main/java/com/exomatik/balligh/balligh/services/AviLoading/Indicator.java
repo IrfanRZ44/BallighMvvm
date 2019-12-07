@@ -1,4 +1,4 @@
-package com.exomatik.balligh.services.AviLoading;
+package com.exomatik.balligh.balligh.services.AviLoading;
 
 import android.animation.ValueAnimator;
 import android.graphics.Canvas;

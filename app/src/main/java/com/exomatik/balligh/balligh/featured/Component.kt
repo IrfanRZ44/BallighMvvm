@@ -1,4 +1,4 @@
-package com.exomatik.balligh.featured
+package com.exomatik.balligh.balligh.featured
 
 import android.app.ProgressDialog
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.exomatik.balligh.services.AviLoading.indicators;
+package com.exomatik.balligh.balligh.services.AviLoading.indicators;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -6,7 +6,7 @@ import android.graphics.RectF;
 
 import android.animation.ValueAnimator;
 
-import com.exomatik.balligh.services.AviLoading.Indicator;
+import com.exomatik.balligh.balligh.services.AviLoading.Indicator;
 
 import java.util.ArrayList;
 

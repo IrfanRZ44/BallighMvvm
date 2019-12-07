@@ -1,69 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_mb_top"
-    >
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No Telp">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="@dimen/lebar_logo"
-        android:layout_height="@dimen/lebar_logo"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_logo_1"
-        android:layout_marginTop="@dimen/width100"
-        android:id="@+id/img_logo"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_maintenance"
-        android:text="@string/text_maintenance"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/text_standard_big"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_big"
-        android:textAlignment="center"
-        android:layout_below="@+id/img_logo"
-        android:visibility="gone"
-        android:maxLines="3"
-        android:layout_marginLeft="@dimen/margin_large"
-        android:layout_marginRight="@dimen/margin_large"
-        />
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="@dimen/width_max"
-        android:layout_height="@dimen/height_standard"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text_maintenance"
-        android:text="@string/btn_sign_in"
-        style="@style/buttonStandardWhite"
-        android:textColor="@color/colorPrimaryMB"
-        android:background="@drawable/border_round_full_white"
-        android:id="@+id/btn_sign"
-        android:layout_marginTop="@dimen/margin_big"
-        android:layout_marginLeft="@dimen/margin_large"
-        android:layout_marginRight="@dimen/margin_large"
-        android:visibility="gone"
-        />
-    <com.exomatik.balligh.services.AviLoading.AVLoadingIndicatorView
-        xmlns:n2="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/avi"
-        style="@style/AVLoadingIndicatorView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_big"
-        n2:indicatorColor="@color/colorWhite"
-        n2:indicatorName="LineScaleIndicator" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_all_right_reserved"
-        style="@style/textStandardWhite"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/margin_standard"
-        android:layout_centerHorizontal="true"
-        />
-</RelativeLayout>
+        android:hint="Kata Sandi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:textColor="@color/colorBlack"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
