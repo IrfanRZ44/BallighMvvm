@@ -15,6 +15,17 @@
     <color name="gray2">#BABABA</color>
     <color name="gray3">#6E6E6E</color>
 
+    <color name="putihAsli">#ffffff</color>
+    <color name="putihGelap1">#b1b1b1</color>
+    <color name="putihGelap2">#878787</color>
+    <color name="putihGelap3">#5E5E5E</color>
+    <color name="putihGelap4">#6B6B6B</color>
+    <color name="putihGelap5">#DADADA</color>
+    <color name="putihGelap6">#F9B7A3</color>
+    <color name="putihGelap7">#707070</color>
+    <color name="putihGelap8">#C4C4C4</color>
+    <color name="putihGelap9">#808080</color>
+
     <color name="biru1">#5574F7</color>
     <color name="biru2">#60C3FF</color>
     <color name="biru3">#051365</color>
@@ -30,4 +41,8 @@
 
     <color name="red1">#F44336</color>
     <color name="red2">#b92a1f</color>
+
+    <color name="putihBiru">#4e62e6</color>
+    <color name="putihBiruGelap">#2035c3</color>
+    <color name="putihBiruGelap2">#051365</color>
 </resources>

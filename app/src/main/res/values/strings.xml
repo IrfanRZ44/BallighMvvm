@@ -6,5 +6,9 @@
     <string name="btn_sign_up">Sign Up</string>
     <string name="btn_sign_in">Sign In</string>
 
+    <string name="text_profil_muballigh">Profil Muballigh</string>
+    <string name="text_kualifikasi_ilmu">Kualifikasi Keilmuan</string>
+    <string name="text_kualifikasi_tabligh">Kesediaan Tabligh</string>
+
     <string name="text_all_right_reserved">Balligh | All Right Reserved 2019</string>
 </resources>

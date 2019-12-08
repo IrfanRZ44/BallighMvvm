@@ -12,7 +12,7 @@ import com.google.android.material.snackbar.Snackbar
 
 
     fun Context.makeSnackbar(message: String, background: Int, view : View) {
-        val snackbar = Snackbar.make(view!!, "", Snackbar.LENGTH_LONG)
+        val snackbar = Snackbar.make(view, "", Snackbar.LENGTH_LONG)
         val v = snackbar.view
         v.background = ContextCompat.getDrawable(view.context, background)
         val tv =
