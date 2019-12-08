@@ -18,12 +18,10 @@ import com.google.firebase.database.*
  */
 
 class AuthSplashViewModel : BaseViewModel() {
-
+    val modelUser = MutableLiveData<ModelUser>()
 
     fun setLogin(noHp: String, password: String): LiveData<Boolean> {
         isShowLoading.value = true
-
-        Log.e("test", noHp)
 
         val isSuccessLogin = MutableLiveData<Boolean>()
         val eventListener = object : ValueEventListener {
@@ -36,7 +34,7 @@ class AuthSplashViewModel : BaseViewModel() {
 
                             message.value = email.toString()
                         }
-//                        prosesLogin(data, password)
+                        modelUser.value = data
                     }
                     isShowLoading.value = false
                 } else {

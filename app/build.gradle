@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
 
 //kotlin kapt and navigation safeargs plugin
 apply plugin: 'kotlin-kapt'
@@ -12,6 +12,11 @@ apply plugin: "androidx.navigation.safeargs"
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
+    dataBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.exomatik.balligh.balligh"
         minSdkVersion 19

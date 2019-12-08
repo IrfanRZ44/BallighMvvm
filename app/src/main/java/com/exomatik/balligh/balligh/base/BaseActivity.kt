@@ -2,9 +2,12 @@ package com.exomatik.balligh.balligh.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import com.exomatik.balligh.balligh.utils.FirebaseUtils
 
-abstract class BaseActivity : AppCompatActivity(){
+abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(){
+    protected lateinit var bind: B
     protected abstract fun onClick()
     protected abstract fun onFirstRun()
     protected abstract fun getThemeResources(): Int
@@ -14,7 +17,7 @@ abstract class BaseActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
 
         setTheme(getThemeResources())
-        setContentView(getLayoutResource())
+        bind = DataBindingUtil.setContentView(this, getLayoutResource())
         init()
         onFirstRun()
         onClick()
